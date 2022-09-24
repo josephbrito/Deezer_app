@@ -1,7 +1,9 @@
 import Layout from "./components/Layout";
+
+import { GlobalStyle } from "./styles/global";
+
 import { ContextProvider } from "./context";
 import { DataProvider } from "./context/data";
-import { GlobalStyle } from "./styles/global";
 
 function App() {
   return (

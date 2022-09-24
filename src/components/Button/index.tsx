@@ -1,17 +1,18 @@
 import React from "react";
 
 import { Container } from "./styles";
+
 import { useContextProvider } from "../../context";
 import { callApi } from "../../services/api";
 import { useData } from "../../context/data";
 
 const Button: React.FC = () => {
   const { text } = useContextProvider();
-  const { setDatas } = useData();
+  const { datas, setDatas } = useData();
 
   const handleClick = async () => {
     if (!text) {
-      alert("Digite seu artista!");
+      alert("type artist or song!");
       return;
     }
 
@@ -19,7 +20,7 @@ const Button: React.FC = () => {
     setDatas(data);
   };
 
-  return <Container onClick={handleClick}>Pequisar</Container>;
+  return <Container onClick={handleClick}>Search</Container>;
 };
 
 export default Button;

@@ -22,7 +22,7 @@ export const Container = styled.figure`
   }
 
   @media (max-width: 1070px) {
-    width: 45%;
+    width: 46%;
   }
 `;
 

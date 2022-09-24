@@ -28,7 +28,7 @@ const Card: React.FC<IData> = (data: IData) => {
       <Content>
         <Name>{data.title}</Name>
         <span>Duration: {(data.duration / 60).toFixed(2)}</span>
-        <ButtonDetails onClick={handleModalToggle}>Detalhes</ButtonDetails>
+        <ButtonDetails onClick={handleModalToggle}>Details</ButtonDetails>
         <ReactModal
           isOpen={open}
           onRequestClose={handleModalToggle}
