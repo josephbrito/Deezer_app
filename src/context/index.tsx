@@ -17,7 +17,7 @@ export function ContextProvider({ children }: { children: JSX.Element }) {
   );
 }
 
-export function useContextProvider() {
+export function useText() {
   const { text, setText } = useContext(ContextValue);
 
   return { text, setText };

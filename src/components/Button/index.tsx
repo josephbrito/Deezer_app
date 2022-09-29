@@ -2,13 +2,12 @@ import React from "react";
 
 import { Container } from "./styles";
 
-import { useContextProvider } from "../../context";
-import { callApi } from "../../services/api";
+import { useText } from "../../context";
 import { useData } from "../../context/data";
 
 const Button: React.FC = () => {
-  const { text } = useContextProvider();
-  const { datas, setDatas } = useData();
+  const { text } = useText();
+  const { setDatas } = useData();
 
   const handleClick = async () => {
     if (!text) {
@@ -16,8 +15,7 @@ const Button: React.FC = () => {
       return;
     }
 
-    let data = await callApi(text);
-    setDatas(data);
+    setDatas(text);
   };
 
   return <Container onClick={handleClick}>Search</Container>;

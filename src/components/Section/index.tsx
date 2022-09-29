@@ -2,13 +2,15 @@ import React from "react";
 import Button from "../Button";
 import Search from "../Search";
 
-import { Container } from "./styles";
+import { Container, Form } from "./styles";
 
 const Section: React.FC = () => {
   return (
     <Container>
-      <Search />
-      <Button />
+      <Form onClick={(e) => e.preventDefault()}>
+        <Search />
+        <Button />
+      </Form>
     </Container>
   );
 };

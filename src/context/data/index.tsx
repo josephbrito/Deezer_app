@@ -1,15 +1,14 @@
-import React, { createContext, useState, useContext } from "react";
-import { IData } from "../../services/types";
+import { createContext, useState, useContext } from "react";
 
 interface IDataContext {
-  datas: IData[];
-  setDatas: (data: IData[]) => void;
+  datas: string;
+  setDatas: (data: string) => void;
 }
 
 const DataContext = createContext<IDataContext>({} as IDataContext);
 
 export function DataProvider({ children }: { children: JSX.Element }) {
-  const [datas, setDatas] = useState<IData[]>([]);
+  const [datas, setDatas] = useState<string>("");
 
   return (
     <DataContext.Provider value={{ datas, setDatas }}>

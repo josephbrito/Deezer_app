@@ -5,8 +5,9 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --color-white:#f5f5f5;
         --bg-black:#3F4045;
+        --bg-footer:rgba(0,0,0,.6);
+        --bg-footer-transparent:rgba(0,0,0,.3);
         --link-color:#00c7f2;
-        --mobile-max:1070px;
     }
 
     * {

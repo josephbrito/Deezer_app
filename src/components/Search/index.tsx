@@ -1,11 +1,10 @@
 import React, { useState, ChangeEvent } from "react";
 import { Container, Input } from "./styles";
 import { FaSearch } from "react-icons/fa";
-import { callApi } from "../../services/api";
-import { useContextProvider } from "../../context";
+import { useText } from "../../context";
 
 const Search: React.FC = () => {
-  const { text, setText } = useContextProvider();
+  const { text, setText } = useText();
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
