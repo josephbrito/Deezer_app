@@ -6,6 +6,7 @@
 
 - React
 - React Context
+- Styled-components
 - Typescript
 - React-icons
 - Graphql
