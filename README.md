@@ -12,4 +12,4 @@
 - Apollo Server
 - Apollo Client
 
-<a href="https://deezer-app-nine.vercel.app/">Deploy</a>
+<a href="https://deezer-qcd4pt4u4-josephbrito.vercel.app/">Deploy</a>
